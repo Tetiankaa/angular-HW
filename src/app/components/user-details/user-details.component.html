@@ -1,0 +1,11 @@
+<div *ngIf="user">
+  <div><span>id:</span> {{user.id}}</div>
+  <div><span>name:</span> {{user.name}}</div>
+  <div><span>username:</span>{{user.username}}</div>
+  <div><span>email:</span>{{user.email}}</div>
+  <div><span>city: </span>{{user.address.city}}</div>
+  <div><span>phone:</span>{{user.phone}}</div>
+  <div><span>company:</span>{{user.company.name}}</div>
+  <button (click)="getPostTitles()">post of current user</button>
+</div>
+
