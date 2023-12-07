@@ -1,3 +1,4 @@
+<h1>Post info</h1>
 <div *ngIf="post">
   <div>userID: {{post.userId}}</div>
   <div>id: {{post.id}}</div>
@@ -5,4 +6,5 @@
   <div>body: {{post.body}}</div>
 </div>
 <hr>
+<h1>Comments</h1>
 <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
